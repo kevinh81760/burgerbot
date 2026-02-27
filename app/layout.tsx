@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${interTight.variable} font-sans antialiased`}>
+      <body className={`${interTight.variable} font-sans antialiased`} suppressHydrationWarning>
         <GsapSmoothScrollProvider>
           <NavBar />
           {children}

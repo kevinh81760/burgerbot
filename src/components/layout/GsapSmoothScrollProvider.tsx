@@ -1,6 +1,7 @@
 "use client";
 
 import { ReactNode, useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 import { useGsapSmoothScroll } from "@/hooks/useGsapSmoothScroll";
 
 type GsapSmoothScrollProviderProps = {
@@ -38,7 +39,8 @@ export function GsapSmoothScrollProvider({
     };
   }, []);
 
-  const { scrollBy, scrollTo, getMaxScroll } = useGsapSmoothScroll(enabled);
+  const pathname = usePathname();
+  const { scrollBy, scrollTo, getMaxScroll } = useGsapSmoothScroll(enabled, pathname);
 
   useEffect(() => {
     if (!enabled) return;

@@ -14,7 +14,7 @@ export function Footer() {
       </div>
 
       {/* Divider */}
-      <div className="h-px bg-[#333333]" />
+      <div className="border-t border-dashed border-[#333333]" />
 
       {/* Social icons */}
       <div className="flex items-center justify-center gap-8 px-[120px] py-10">

@@ -1,32 +1,47 @@
-import Image from "next/image";
+import { SystemShowcase } from "@/components/landing/SystemShowcase";
 
 export function ContentSection() {
   return (
-    <section className="flex flex-col items-center gap-12 bg-white px-[160px] py-[100px]">
-      <h2 className="text-[#1a1a2e] text-[44px] font-bold text-center">
-        Robots Ready to Work
-      </h2>
-      <p className="text-[#6b7280] text-[17px] text-center">
-        Servo7 robots are simple and fast to implement.
-      </p>
-      <div className="flex flex-col gap-8 max-w-[780px] w-full">
-        <p className="text-[#6b7280] text-base leading-[1.7]">
-          Traditional automation means redesigning your entire facility for the
-          robot to work. You need to change the floor plan, adjust conveyor
-          belts, and re-educate your staff. This is inefficient and unnecessary.
+    <section className="flex flex-col bg-white">
+      <div className="flex flex-col items-center gap-12 px-[160px] pt-[120px] pb-[80px]">
+        <h2 className="text-[#1a1a2e] text-[44px] font-semibold text-center">
+          Built for the Kitchen
+        </h2>
+        <p className="text-text-secondary text-[17px] text-center -mt-6">
+          Drop-in automation that works in your kitchen today.
         </p>
-        <p className="text-[#6b7280] text-base leading-[1.7]">
-          With Servo7, you don&apos;t have to do any of that. The implementation
-          process is simple and fast, because our robots:
-        </p>
+        <div className="flex flex-col gap-8 max-w-[780px] w-full">
+          <p className="text-text-secondary text-base leading-[1.7]">
+            Every burger, every time — assembled with the same precision,
+            the same portioning, and the same speed. BurgerBot handles
+            the line so your team can focus on what robots can&apos;t do.
+          </p>
+          <p className="text-text-secondary text-base leading-[1.7]">
+            No kitchen redesign. No months of downtime. No reprogramming
+            when the menu changes. BurgerBot installs in a day and learns
+            your recipes from a handful of live demonstrations.
+          </p>
+        </div>
+        <div className="relative w-full max-w-[780px] aspect-video overflow-hidden shadow-xl mb-20 rounded-xl">
+          <iframe
+            src="https://www.youtube.com/embed/qpEV-Glrq_Y?start=4"
+            title="BurgerBot in action"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            className="absolute inset-0 w-full h-full"
+          />
+        </div>
+
+        <SystemShowcase />
       </div>
-      <div className="relative w-full max-w-[780px] aspect-square overflow-hidden shadow-xl">
-        <Image
-          src="/robot-arm.png"
-          alt="Burger Bots robotic arm assembling orders"
-          fill
-          className="object-cover"
-        />
+
+      <div className="mx-6 mb-6 bg-bg-surface rounded-2xl px-16 py-14 flex flex-col gap-4 mt-10">
+        <h3 className="text-[#1a1a2e] text-[32px] font-bold leading-tight tracking-tight">
+          Don&apos;t redesign your facility.<br />Just deploy robots.
+        </h3>
+        <p className="text-text-secondary text-sm leading-relaxed">
+          No complex installation. Our robots adapt to your existing environment.
+        </p>
       </div>
     </section>
   );

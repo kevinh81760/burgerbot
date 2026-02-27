@@ -11,24 +11,38 @@ type ScrollOptions = {
   duration?: number;
 };
 
-export function useGsapSmoothScroll(enabled: boolean) {
+export function useGsapSmoothScroll(enabled: boolean, pathname?: string) {
   const scrollStateRef = useRef<ScrollState>({ y: 0 });
   const maxScrollRef = useRef(0);
   const tweenRef = useRef<gsap.core.Tween | null>(null);
+
+  const updateMaxScroll = useCallback(() => {
+    if (typeof document === "undefined" || typeof window === "undefined") return;
+    const doc = document.documentElement;
+    maxScrollRef.current = Math.max(0, doc.scrollHeight - window.innerHeight);
+  }, []);
+
+  // Reset scroll state on route change so GSAP starts from 0 on new pages
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+
+    if (tweenRef.current) {
+      tweenRef.current.kill();
+      tweenRef.current = null;
+    }
+
+    scrollStateRef.current.y = 0;
+
+    // Defer max scroll calculation until after new page content renders
+    const timer = setTimeout(updateMaxScroll, 100);
+    return () => clearTimeout(timer);
+  }, [pathname, updateMaxScroll]);
 
   useEffect(() => {
     if (!enabled) return;
     if (typeof window === "undefined" || typeof document === "undefined") {
       return;
     }
-
-    const updateMaxScroll = () => {
-      const doc = document.documentElement;
-      maxScrollRef.current = Math.max(
-        0,
-        doc.scrollHeight - window.innerHeight
-      );
-    };
 
     const syncScrollFromWindow = () => {
       scrollStateRef.current.y =
@@ -51,7 +65,7 @@ export function useGsapSmoothScroll(enabled: boolean) {
         tweenRef.current = null;
       }
     };
-  }, [enabled]);
+  }, [enabled, updateMaxScroll]);
 
   const scrollTo = useCallback(
     (targetY: number, options?: ScrollOptions) => {
