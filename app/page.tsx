@@ -1,6 +1,6 @@
-import { NavBar } from "../components/landing/NavBar";
-import { Hero } from "../components/landing/Hero";
-import { Footer } from "../components/landing/Footer";
+import { NavBar } from "@/components/landing/NavBar";
+import { Hero } from "@/components/landing/Hero";
+import { Footer } from "@/components/landing/Footer";
 
 export default function Home() {
   // #region agent log
@@ -16,7 +16,7 @@ export default function Home() {
         sessionId: "ee2945",
         runId: "initial",
         hypothesisId: "H1",
-        location: "src/app/page.tsx:Home",
+        location: "app/page.tsx:Home",
         message: "Home page rendered",
         data: {},
         timestamp: Date.now(),

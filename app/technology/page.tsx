@@ -1,4 +1,4 @@
-import { TechStackGrid } from "../components/technology/TechStackGrid";
+import { TechStackGrid } from "@/components/technology/TechStackGrid";
 
 export default function TechnologyPage() {
   return (

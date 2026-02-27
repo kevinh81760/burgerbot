@@ -35,7 +35,7 @@ export default function RootLayout({
         sessionId: "ee2945",
         runId: "initial",
         hypothesisId: "H1",
-        location: "src/app/layout.tsx:RootLayout",
+        location: "app/layout.tsx:RootLayout",
         message: "RootLayout rendered",
         data: {},
         timestamp: Date.now(),
