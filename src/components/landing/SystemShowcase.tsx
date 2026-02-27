@@ -38,7 +38,7 @@ export function SystemShowcase() {
   const [active, setActive] = useState(0);
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 w-full max-w-[1100px]">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 w-full max-w-[1200px] mt-8 mb-8">
       {/* Left: item list */}
       <div className="flex flex-col">
         {items.map((item, i) => (
@@ -83,7 +83,7 @@ export function SystemShowcase() {
       </div>
 
       {/* Right: image */}
-      <div className="relative aspect-square overflow-hidden rounded-xl shadow-lg">
+      <div className="relative aspect-square overflow-hidden shadow-lg">
         {items.map((item, i) => (
           <div
             key={item.title}

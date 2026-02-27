@@ -33,18 +33,23 @@ export function NavBar() {
       }`}
     >
       <div
-        className={`flex items-center justify-between transition-all duration-500 ease-in-out ${
+        className={`grid grid-cols-3 items-center transition-all duration-500 ease-in-out ${
           scrolled
-            ? "bg-neutral-600/80 backdrop-blur-md rounded-2xl px-6 py-3 shadow-lg"
+            ? "bg-neutral-500/70 backdrop-blur-md rounded-2xl px-6 py-3 shadow-lg"
             : "px-6 py-4"
         }`}
       >
-        <div className="flex items-center gap-2.5">
-          <div className="w-7 h-5 bg-white rounded-[3px]" />
+        <div className="flex items-center">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/logo.png"
+            alt="BurgerBot Logo"
+            style={{ height: "40px", width: "auto", mixBlendMode: "screen" }}
+          />
           <span className="text-white text-xl font-bold tracking-[2px]">BURGERBOT</span>
         </div>
 
-        <nav className="flex items-center gap-10">
+        <nav className="flex items-center justify-center gap-10">
           <Link href="/" className="text-white hover:text-gray-300 text-[15px] font-medium transition-colors">
             Home
           </Link>
@@ -56,12 +61,14 @@ export function NavBar() {
           </Link>
         </nav>
 
-        <Link
-          href="/contact"
-          className="bg-white text-black text-sm font-semibold px-7 py-3 rounded-full transition-all duration-300 hover:bg-neutral-200"
-        >
-          Contact us
-        </Link>
+        <div className="flex justify-end">
+          <Link
+            href="/contact"
+            className="bg-white text-black text-sm font-semibold px-7 py-3 rounded-full transition-all duration-300 hover:bg-neutral-200"
+          >
+            Contact us
+          </Link>
+        </div>
       </div>
     </header>
   );

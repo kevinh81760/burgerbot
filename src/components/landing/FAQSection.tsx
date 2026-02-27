@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { FadeIn } from "@/components/animations/FadeIn";
 
 const faqs = [
   {
@@ -61,14 +62,18 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
 
 export function FAQSection() {
   return (
-    <section className="bg-white px-[160px] py-[120px] mb-12">
-      <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-x-24 gap-y-12">
-        <h2 className="text-[#1a1a2e] text-[36px] font-semibold leading-tight tracking-tight">
-          Your questions answered
-        </h2>
+    <section className="bg-white px-[160px] py-[120px] mb-11">
+      <div className="grid grid-cols-1 md:grid-cols-[1fr_1.7fr] gap-x-6 gap-y-12">
+        <FadeIn>
+          <h2 className="text-[#1a1a2e] text-[36px] font-semibold leading-tight tracking-tight">
+            Your questions answered
+          </h2>
+        </FadeIn>
         <div className="flex flex-col">
-          {faqs.map((faq) => (
-            <FAQItem key={faq.question} question={faq.question} answer={faq.answer} />
+          {faqs.map((faq, i) => (
+            <FadeIn key={faq.question} delay={i * 0.08}>
+              <FAQItem question={faq.question} answer={faq.answer} />
+            </FadeIn>
           ))}
           <div className="border-t border-[#e5e5e5]" />
         </div>
