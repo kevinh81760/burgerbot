@@ -1,0 +1,431 @@
+{
+  "version": "2.8",
+  "children": [
+    {
+      "type": "frame",
+      "id": "fP16G",
+      "x": 0,
+      "y": 0,
+      "name": "Landing Page",
+      "width": 1440,
+      "fill": "$bg-primary",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "ERVVj",
+          "name": "Hero Section",
+          "metadata": {
+            "type": "unsplash",
+            "username": "onkysf",
+            "link": "https://unsplash.com/@onkysf",
+            "author": "Yusuf Onuk"
+          },
+          "clip": true,
+          "width": "fill_container",
+          "height": 720,
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "https://images.unsplash.com/photo-1671351966453-3f1410780c41?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzIxNzk3MTV8&ixlib=rb-4.1.0&q=80&w=1080",
+            "mode": "fill"
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "gXmfm",
+              "x": 0,
+              "y": 0,
+              "name": "Hero Overlay",
+              "width": 1440,
+              "height": 720,
+              "fill": "#00000066",
+              "layout": "none"
+            },
+            {
+              "type": "frame",
+              "id": "YYD4J",
+              "x": 0,
+              "y": 0,
+              "name": "Hero Content",
+              "width": 1440,
+              "height": 720,
+              "layout": "vertical",
+              "gap": 28,
+              "padding": [
+                0,
+                120
+              ],
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Y2wY8",
+                  "name": "headline",
+                  "fill": "#FFFFFF",
+                  "content": "Industry Robots",
+                  "textAlign": "center",
+                  "fontFamily": "Inter",
+                  "fontSize": 72,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "RI2zS",
+                  "name": "subline",
+                  "fill": "#d4d4d5",
+                  "content": "Simply deployed. Ready to work.",
+                  "textAlign": "center",
+                  "fontFamily": "Inter",
+                  "fontSize": 22
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "A5TNT",
+              "x": 0,
+              "y": 0,
+              "name": "Navbar",
+              "width": 1440,
+              "padding": [
+                24,
+                60
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "2bTuM",
+                  "name": "Logo",
+                  "gap": 10,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "dbrYX",
+                      "name": "logoIcon",
+                      "width": 28,
+                      "height": 20,
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 3
+                    },
+                    {
+                      "type": "text",
+                      "id": "ir1IJ",
+                      "name": "logoText",
+                      "fill": "#FFFFFF",
+                      "content": "BURGERBOT",
+                      "fontFamily": "Inter",
+                      "fontSize": 20,
+                      "fontWeight": "700",
+                      "letterSpacing": 2
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "fUSXq",
+                  "name": "Nav Links",
+                  "gap": 40,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "LWYIf",
+                      "name": "navHome",
+                      "fill": "#FFFFFF",
+                      "content": "Home",
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "text",
+                      "id": "CBbGU",
+                      "name": "navTech",
+                      "fill": "#d4d4d5",
+                      "content": "Technology",
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "text",
+                      "id": "vKNxV",
+                      "name": "navAbout",
+                      "fill": "#d4d4d5",
+                      "content": "About",
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "DI1gV",
+                  "name": "Contact Button",
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 100,
+                  "padding": [
+                    12,
+                    28
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "M14zz",
+                      "name": "ctaBtnText",
+                      "fill": "#000000",
+                      "content": "Contact us",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "600"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "IFTgl",
+          "name": "Content Section",
+          "width": "fill_container",
+          "fill": "$bg-primary",
+          "layout": "vertical",
+          "gap": 48,
+          "padding": [
+            100,
+            160
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "Wrg5D",
+              "name": "contentTitle",
+              "fill": "$text-primary",
+              "content": "Robots Ready to Work",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 44,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "D3QC7",
+              "name": "contentSubline",
+              "fill": "$text-secondary",
+              "content": "Servo7 robots are simple and fast to implement.",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 17
+            },
+            {
+              "type": "frame",
+              "id": "sC1cG",
+              "name": "contentBody",
+              "width": 780,
+              "layout": "vertical",
+              "gap": 32,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "QLJz2",
+                  "name": "para1",
+                  "fill": "$text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Traditional automation means redesigning your entire facility for the robot to work. You need to change the floor plan, adjust conveyor belts, and re-educate your staff. This is inefficient and unnecessary.",
+                  "lineHeight": 1.7,
+                  "fontFamily": "Inter",
+                  "fontSize": 16
+                },
+                {
+                  "type": "text",
+                  "id": "bkL03",
+                  "name": "para2",
+                  "fill": "$text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "With Servo7, you don't have to do any of that. The implementation process is simple and fast, because our robots:",
+                  "lineHeight": 1.7,
+                  "fontFamily": "Inter",
+                  "fontSize": 16
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "SA7oB",
+          "name": "Footer",
+          "width": "fill_container",
+          "fill": "$bg-dark",
+          "layout": "vertical",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "tkySC",
+              "name": "Footer CTA",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 40,
+              "padding": 120,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "GTUW1",
+                  "name": "footerHeadline",
+                  "fill": "$text-white",
+                  "textGrowth": "fixed-width",
+                  "width": 700,
+                  "content": "Industry robots to relieve\nhumans from repetitive tasks",
+                  "lineHeight": 1.3,
+                  "textAlign": "center",
+                  "fontFamily": "Inter",
+                  "fontSize": 44,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "frame",
+                  "id": "3sgvl",
+                  "name": "footerBtn",
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 100,
+                  "padding": [
+                    16,
+                    36
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "SgBa5",
+                      "name": "footerBtnText",
+                      "fill": "#000000",
+                      "content": "Contact us",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "600"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "grzbi",
+              "name": "footerDivider",
+              "width": "fill_container",
+              "height": 1,
+              "fill": "#333333"
+            },
+            {
+              "type": "frame",
+              "id": "JLQaZ",
+              "name": "Footer Bottom",
+              "width": "fill_container",
+              "gap": 32,
+              "padding": [
+                40,
+                120
+              ],
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "vFyVQ",
+                  "name": "socialLi",
+                  "width": 22,
+                  "height": 22,
+                  "iconFontName": "linkedin",
+                  "iconFontFamily": "lucide",
+                  "fill": "$text-white"
+                },
+                {
+                  "type": "icon_font",
+                  "id": "cQQ5g",
+                  "name": "socialX",
+                  "width": 22,
+                  "height": 22,
+                  "iconFontName": "twitter",
+                  "iconFontFamily": "lucide",
+                  "fill": "$text-white"
+                },
+                {
+                  "type": "icon_font",
+                  "id": "L5BSb",
+                  "name": "socialYt",
+                  "width": 22,
+                  "height": 22,
+                  "iconFontName": "youtube",
+                  "iconFontFamily": "lucide",
+                  "fill": "$text-white"
+                },
+                {
+                  "type": "icon_font",
+                  "id": "UtsQM",
+                  "name": "socialMail",
+                  "width": 22,
+                  "height": 22,
+                  "iconFontName": "mail",
+                  "iconFontFamily": "lucide",
+                  "fill": "$text-white"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "variables": {
+    "bg-dark": {
+      "type": "color",
+      "value": "#000000"
+    },
+    "bg-primary": {
+      "type": "color",
+      "value": "#FFFFFF"
+    },
+    "bg-surface": {
+      "type": "color",
+      "value": "#F5F5F5"
+    },
+    "border": {
+      "type": "color",
+      "value": "#d4d4d5"
+    },
+    "text-muted": {
+      "type": "color",
+      "value": "#d4d4d5"
+    },
+    "text-primary": {
+      "type": "color",
+      "value": "#1A1A2E"
+    },
+    "text-secondary": {
+      "type": "color",
+      "value": "#6B7280"
+    },
+    "text-white": {
+      "type": "color",
+      "value": "#FFFFFF"
+    }
+  }
+}

@@ -1,22 +1,24 @@
+import Image from "next/image";
+
 export function Hero() {
   return (
-    <section className="flex flex-col items-start gap-4 px-6 py-16">
-      <h1 className="text-4xl font-semibold tracking-tight">
-        this is the landing page
-      </h1>
-      <p className="max-w-xl text-sm text-foreground/70">
-        This starter keeps things minimal. Compose pages from modular components
-        in the <code>src/components</code> folder and grow the design as you go.
-      </p>
-      <div className="mt-4 flex gap-3">
-        <button className="rounded-full bg-foreground px-5 py-2 text-sm font-medium text-background">
-          Get Started
-        </button>
-        <button className="rounded-full border border-foreground/20 px-5 py-2 text-sm">
-          View Components
-        </button>
+    <section className="relative h-screen min-h-[720px] w-full overflow-hidden">
+      <Image
+        src="/burger.png"
+        alt="Burger Bots packaging with a prepared burger"
+        fill
+        className="object-cover"
+        priority
+      />
+      <div className="absolute inset-0 bg-black/40" />
+      <div className="relative z-10 flex flex-col items-center justify-center h-full gap-7 px-[120px]">
+        <h1 className="text-white text-[72px] font-semibold text-center leading-tight">
+          Restaurant Automation
+        </h1>
+        <p className="text-[#d4d4d5] text-[22px] text-center">
+          Simply deployed. Ready to work.
+        </p>
       </div>
     </section>
   );
 }
-

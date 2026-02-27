@@ -2,20 +2,25 @@
 
 @theme inline {
   --color-background: #ffffff;
-  --color-foreground: #171717;
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-foreground: #1a1a2e;
+  --font-sans: var(--font-inter-tight);
+
+  --color-text-primary: #1a1a2e;
+  --color-text-secondary: #6b7280;
+  --color-text-muted: #d4d4d5;
+  --color-bg-dark: #000000;
+  --color-bg-surface: #f5f5f5;
+  --color-border-default: #d4d4d5;
 }
 
-@media (prefers-color-scheme: dark) {
-  @theme inline {
-    --color-background: #0a0a0a;
-    --color-foreground: #ededed;
-  }
+html,
+body {
+  height: 100%;
+  margin: 0;
+  overscroll-behavior: none;
 }
 
 body {
   background: var(--color-background);
   color: var(--color-foreground);
 }
-
