@@ -40,13 +40,14 @@ export function NavBar() {
         }`}
       >
         <div className="flex items-center">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src="/logo.png"
-            alt="BurgerBot Logo"
-            style={{ height: "40px", width: "auto", mixBlendMode: scrolled ? "multiply" : "screen" }}
-          />
-          <span className={`text-xl font-bold tracking-[2px] transition-colors duration-500 ${scrolled ? "text-black" : "text-white"}`}>BURGERBOT</span>
+          <Link href="/">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/logo.png"
+              alt="BurgerBot Logo"
+              style={{ height: "52px", width: "auto", filter: scrolled ? "invert(1)" : "none", transition: "filter 0.5s ease-in-out" }}
+            />
+          </Link>
         </div>
 
         <nav className="flex items-center justify-center gap-10">

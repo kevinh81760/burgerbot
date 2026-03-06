@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { interTight } from "@/fonts";
+import { interTight, spaceGrotesk } from "@/fonts";
 import "./globals.css";
 import { GsapSmoothScrollProvider } from "@/components/layout/GsapSmoothScrollProvider";
 import { NavBar } from "@/components/landing/NavBar";
@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${interTight.variable} font-sans antialiased`} suppressHydrationWarning>
+      <body className={`${interTight.variable} ${spaceGrotesk.variable} font-sans antialiased`} suppressHydrationWarning>
         <GsapSmoothScrollProvider>
           <NavBar />
           {children}
