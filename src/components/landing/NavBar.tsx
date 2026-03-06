@@ -35,7 +35,7 @@ export function NavBar() {
       <div
         className={`grid grid-cols-3 items-center transition-all duration-500 ease-in-out ${
           scrolled
-            ? "bg-neutral-500/70 backdrop-blur-md rounded-2xl px-6 py-3 shadow-lg"
+            ? "bg-neutral-400/20 backdrop-blur-md rounded-2xl px-6 py-3 shadow-lg"
             : "px-6 py-4"
         }`}
       >
@@ -44,19 +44,19 @@ export function NavBar() {
           <img
             src="/logo.png"
             alt="BurgerBot Logo"
-            style={{ height: "40px", width: "auto", mixBlendMode: "screen" }}
+            style={{ height: "40px", width: "auto", mixBlendMode: scrolled ? "multiply" : "screen" }}
           />
-          <span className="text-white text-xl font-bold tracking-[2px]">BURGERBOT</span>
+          <span className={`text-xl font-bold tracking-[2px] transition-colors duration-500 ${scrolled ? "text-black" : "text-white"}`}>BURGERBOT</span>
         </div>
 
         <nav className="flex items-center justify-center gap-10">
-          <Link href="/" className="text-white hover:text-gray-300 text-[15px] font-medium transition-colors">
+          <Link href="/" className={`text-[15px] font-medium transition-colors duration-500 ${scrolled ? "text-black hover:text-neutral-600" : "text-white hover:text-gray-300"}`}>
             Home
           </Link>
-          <Link href="/technology" className="text-white hover:text-gray-300 text-[15px] font-medium transition-colors">
+          <Link href="/technology" className={`text-[15px] font-medium transition-colors duration-500 ${scrolled ? "text-black hover:text-neutral-600" : "text-white hover:text-gray-300"}`}>
             Technology
           </Link>
-          <Link href="/about" className="text-white hover:text-gray-300 text-[15px] font-medium transition-colors">
+          <Link href="/about" className={`text-[15px] font-medium transition-colors duration-500 ${scrolled ? "text-black hover:text-neutral-600" : "text-white hover:text-gray-300"}`}>
             About
           </Link>
         </nav>
@@ -64,7 +64,11 @@ export function NavBar() {
         <div className="flex justify-end">
           <Link
             href="/contact"
-            className="bg-white text-black text-sm font-semibold px-7 py-3 rounded-full transition-all duration-300 hover:bg-neutral-200"
+            className={`text-sm font-semibold px-7 py-3 rounded-full transition-all duration-500 ${
+              scrolled
+                ? "bg-black text-white hover:bg-neutral-800"
+                : "bg-white text-black hover:bg-neutral-200"
+            }`}
           >
             Contact us
           </Link>
