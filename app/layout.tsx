@@ -5,7 +5,7 @@ import { GsapSmoothScrollProvider } from "@/components/layout/GsapSmoothScrollPr
 import { NavBar } from "@/components/landing/NavBar";
 
 export const metadata: Metadata = {
-  title: "BURGERBOT",
+  title: "BURGERBOTS",
   description: "Industry robots. Simply deployed. Ready to work.",
 };
 

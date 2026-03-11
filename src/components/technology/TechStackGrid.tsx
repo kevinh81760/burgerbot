@@ -4,32 +4,32 @@ const sections = [
   {
     heading: "The system",
     body: [
-      "BurgerBot is a fully integrated robotics platform designed from the ground up for commercial kitchen environments. Every component is engineered to work in concert — from the moment an order is placed to the moment it leaves the pass.",
-      "The system requires no structural modifications to your kitchen. It installs in hours, not weeks, and operates alongside your existing staff without friction.",
+      "BurgerBots is built around one idea: the robot should fit your kitchen, not the other way around. Every part of the system, from the arm to the software, is designed to work alongside your team, not replace it.",
+      "It installs in hours, not weeks. No structural changes, no disruption. Your staff keeps working while it gets set up. Most kitchens are fully running the same day.",
       <br />
     ],
   },
   {
     heading: "The interface",
     body: [
-      "A single touchscreen panel gives operators full visibility into every active task, queue position, and throughput metric in real time. No proprietary software licenses, no IT overhead.",
-      "The interface is designed for kitchens — glove-friendly, grease-resistant, and readable under commercial lighting conditions.",
+      "One screen. Your team can see everything: what\u2019s in the queue, what\u2019s being assembled, how the shift is tracking. No logins, no dashboards, no IT department required.",
+      "Built for an actual kitchen: readable under bright lights, usable with gloves on, and easy enough that nobody needs training to understand it.",
       <br />
     ],
   },
   {
     heading: "The assembly arm",
     body: [
-      "Six degrees of freedom, sub-millimeter repeatability, and a soft-grip end effector that handles everything from a brioche bun to a sliced tomato without crushing or misalignment.",
-      "The arm learns new ingredient placements from a handful of demonstrations. No jigs, no fixtures, no reprogramming cycles.",
+      "Gentle enough to handle a brioche bun without crushing it. Precise enough to place a tomato the same way, every time, for a thousand orders straight.",
+      "Show it a new build a few times and it learns. No programming, no specialist, no downtime. Your team teaches it the same way they\u2019d train a new hire, just faster.",
       <br />
     ],
   },
   {
     heading: "The dispensary",
     body: [
-      "Sauces, liquids, and dry toppings are dispensed with gram-level precision on every cycle. Portion consistency is built in — not a goal, a guarantee.",
-      "The dispensary module hot-swaps in under ninety seconds, so a menu change never means a line stoppage.",
+      "Every sauce, every topping, portioned the same way every time. Not approximately. Exactly. The kind of consistency that\u2019s impossible to maintain manually across a full service.",
+      "Swapping out a module takes under ninety seconds. Menu changes, seasonal items, new builds. None of them mean stopping the line.",
       <br />
     ],
   },
@@ -44,16 +44,16 @@ const sections = [
   {
     heading: "The intelligence",
     body: [
-      "Every BurgerBot unit runs a local inference model trained on millions of food-preparation sequences. It improves with every shift, surfacing efficiency gains without requiring a cloud connection.",
-      "Anomaly detection catches deviations in portion weight, assembly order, and cycle time before they compound. The system learns what normal looks like for your specific operation.",
+      "BurgerBots gets better the longer it runs in your kitchen. It learns your rhythms, your peak times, your specific recipes. All of that happens locally, without sending anything to the cloud.",
+      "When something looks off, it catches it before it becomes a problem. Wrong portion, missed step, timing drift. All flagged and handled before it ever reaches your team or your guests.",
       <br />
     ],
   },
   {
     heading: "Built to scale",
     body: [
-      "A single unit handles up to 300 covers per hour. Multiple units share a unified task queue and balance load dynamically — add capacity without adding complexity.",
-      "Whether you operate one location or four hundred, the architecture is the same. Onboarding a new site takes less than a day.",
+      "One unit handles up to 300 covers an hour. Add more and they work together automatically, sharing the queue, balancing the load, keeping pace no matter how busy it gets.",
+      "One location or four hundred, it works the same way. Getting a new site up and running takes less than a day.",
       <br />
     ],
   },

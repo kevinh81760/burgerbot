@@ -4,15 +4,15 @@ const sections = [
   {
     heading: "The problem",
     body: [
-      "Commercial kitchens run on people doing the same motions thousands of times a day — flipping patties, dressing buns, plating orders. It\u2019s exhausting, error-prone, and expensive to staff consistently at the speed a modern QSR demands.",
-      "The robots that exist today require you to rebuild your kitchen around them. New layouts, new equipment, months of downtime, and a system that\u2019s already obsolete the moment your menu changes. That\u2019s not automation \u2014 that\u2019s a renovation.",
+      "Kitchen work is hard. Not hard in a way that builds character. Hard in a way that burns people out. The same motion, hundreds of times a shift, under heat and pressure and time. The best people leave. The ones who stay get worn down.",
+      "The robots that came before us made things worse. They asked kitchens to rebuild around them: new layouts, new equipment, months of downtime. You\u2019d spend a year integrating a system only to find it couldn\u2019t handle a single menu update.",
     ],
   },
   {
     heading: "Our solution",
     body: [
-      "BurgerBot installs into your kitchen as it stands today. No structural changes, no conveyor overhauls, no floor plan redesign. The robot comes to your process \u2014 not the other way around.",
-      "Our assembly arm learns new recipes from a handful of live demonstrations. Once deployed, it improves with every shift \u2014 increasing throughput, tightening portion consistency, and flagging errors before they reach the pass. Up to 300 covers per hour, every hour.",
+      "BurgerBots comes to your kitchen, not the other way around. No structural changes, no disruption to your team, no months offline. It fits into what you already have and starts working the same day.",
+      "Your staff shows it a recipe a few times. After that, it handles that part of the line. Consistently, tirelessly, without complaint. Your team gets to focus on the work that actually needs a person: the guests, the judgment calls, the things that matter.",
     ],
   },
   {
@@ -20,14 +20,14 @@ const sections = [
     body: [
       "We spent years deploying robotics in some of the most demanding environments imaginable \u2014 autonomous drones, hospital logistics, military operations. The hardware always worked. The integration never did. Weeks of setup for systems that couldn\u2019t adapt when anything changed.",
       "We started asking a different question: what if the robot learned the job instead of the job being rebuilt for the robot? We tested the idea in a commercial kitchen, showed the arm how to build a burger a few times, and watched it replicate it perfectly on every subsequent order.",
-      "We quit our jobs that afternoon and started BurgerBot.",
+      "We quit our jobs that afternoon and started BurgerBots.",
     ],
   },
   {
     heading: "Team",
     body: [
-      "BurgerBot is built by engineers with deep roots in autonomous systems, computer vision, and large-scale AI. We came from aerospace, autonomous driving, hyperloop, and language model research \u2014 fields where reliability is non-negotiable.",
-      "We\u2019re already on the ground with restaurants and QSR brands, running live kitchens and iterating fast. We\u2019re not building a demo. We\u2019re building the kitchen of the next decade.",
+      "We\u2019re engineers from aerospace, autonomous vehicles, and AI research. Fields where things have to work, every time, without exception. We brought that same standard to the kitchen.",
+      "We\u2019re already running live with restaurants and QSR brands. Real kitchens, real volume, real feedback. We\u2019re not building a pitch deck. We\u2019re building something your team can actually rely on.",
     ],
   },
 ];

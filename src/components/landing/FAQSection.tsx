@@ -5,29 +5,29 @@ import { FadeIn } from "@/components/animations/FadeIn";
 
 const faqs = [
   {
-    question: "What exactly does BurgerBot do?",
+    question: "What exactly does BurgerBots do?",
     answer:
-      "BurgerBot is a fully autonomous kitchen robot that assembles burgers from scratch — toasting buns, dispensing sauces, stacking ingredients, and plating orders with sub-millimeter precision. It handles the repetitive, high-volume work so your team can focus on hospitality.",
+      "BurgerBots takes on the repetitive assembly work: toasting buns, portioning sauces, stacking ingredients, plating orders. Your team isn't stuck doing the same motion hundreds of times a shift. It handles the grind. Your people handle the guests.",
   },
   {
     question: "Do I need to redesign my kitchen to install it?",
     answer:
-      "No. BurgerBot is built to fit into your existing kitchen footprint without structural changes. There are no conveyor retrofits, no floor plan redraws, and no construction downtime. Installation typically completes in under a day.",
+      "No. BurgerBots is designed to work in the kitchen you already have. No construction, no conveyor overhauls, no floor plan changes. It shows up, fits in, and is running the same day, usually within a few hours.",
   },
   {
-    question: "How does BurgerBot learn new menu items?",
+    question: "How does BurgerBots learn new menu items?",
     answer:
-      "Show it a few times. BurgerBot uses an AI model that learns new assemblies from a handful of live demonstrations — no code, no reprogramming, no specialist required. Once trained, it replicates the assembly consistently on every order.",
+      "You show it a few times and it picks it up. No code, no specialist, no downtime. Your team does the demonstration, BurgerBots does the rest. Menu updates that used to take weeks now take an afternoon.",
   },
   {
     question: "How fast can it actually work?",
     answer:
-      "A single BurgerBot unit can handle up to 300 covers per hour. Multiple units share a unified order queue and balance load automatically, so throughput scales linearly as your volume grows.",
+      "One unit handles up to 300 covers per hour without breaking a sweat. If your volume grows, add another unit. They share the queue automatically and pick up the extra load. Your staff stays consistent even when the rush isn't.",
   },
   {
     question: "What happens if the robot makes a mistake?",
     answer:
-      "BurgerBot's onboard vision system monitors every step of the assembly process in real time. If a deviation is detected — wrong portion weight, misaligned ingredient, missed step — it flags the order and alerts your team before it reaches the pass.",
+      "It catches its own mistakes before your team or your guests ever see them. The onboard vision system watches every step. If something looks off, it flags the order and lets your team know right away. Nothing leaves the pass that shouldn't.",
   },
 ];
 

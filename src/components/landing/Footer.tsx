@@ -4,9 +4,9 @@ export function Footer() {
       {/* CTA */}
       <div className="flex flex-col items-center gap-10 px-[120px] py-[120px]">
         <h2 className="text-white text-[44px] font-medium text-center leading-[1.3] max-w-[700px]">
-          Industry robots to relieve
+          Less time on the line.
           <br />
-          humans from repetitive tasks
+          More time on what matters.
         </h2>
         <button className="bg-white text-black text-base font-semibold px-9 py-4 rounded-full">
           Contact us

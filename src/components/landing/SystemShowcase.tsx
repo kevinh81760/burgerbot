@@ -8,7 +8,7 @@ const items = [
     number: "01.",
     title: "Assembler",
     description:
-      "A six-axis robot arm that builds every burger to spec — bun, protein, toppings, sauces — with sub-millimeter consistency on every single order. Learns new recipes from a handful of live demonstrations.",
+      "A six-axis robot arm that builds every burger to spec: bun, protein, toppings, sauces. Sub-millimeter consistency on every single order. Learns new recipes from a handful of live demonstrations.",
     image: "/robot-arm.png",
   },
   {

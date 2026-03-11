@@ -19,7 +19,7 @@ export default function AboutPage() {
             About
           </p>
           <h1 className="text-6xl md:text-7xl font-semibold tracking-tight text-white">
-            BurgerBot
+            BurgerBots
           </h1>
         </div>
       </div>

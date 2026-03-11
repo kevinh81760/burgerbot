@@ -44,7 +44,7 @@ export function NavBar() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/logo.png"
-              alt="BurgerBot Logo"
+              alt="BurgerBots Logo"
               style={{ height: "52px", width: "auto", filter: scrolled ? "invert(1)" : "none", transition: "filter 0.5s ease-in-out" }}
             />
           </Link>

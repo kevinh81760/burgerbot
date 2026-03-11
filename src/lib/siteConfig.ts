@@ -1,5 +1,5 @@
 export const siteConfig = {
-  name: "Burgerbot",
+  name: "Burgerbots",
   description: "Minimal Next.js starter with modular components.",
 };
 
