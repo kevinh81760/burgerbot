@@ -1,15 +1,11 @@
-import { Hero } from "@/components/landing/Hero";
-import { ContentSection } from "@/components/landing/ContentSection";
-import { FAQSection } from "@/components/landing/FAQSection";
-import { Footer } from "@/components/landing/Footer";
+import type { Metadata } from "next";
+import { PortalEntry } from "@/components/portal/PortalEntry";
 
-export default function Home() {
-  return (
-    <main className="relative flex flex-col min-h-screen">
-      <Hero />
-      <ContentSection />
-      <FAQSection />
-      <Footer />
-    </main>
-  );
+export const metadata: Metadata = {
+  title: "Burgerbots",
+  description: "Choose a destination.",
+};
+
+export default function PortalPage() {
+  return <PortalEntry />;
 }

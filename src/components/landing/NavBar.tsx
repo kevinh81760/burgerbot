@@ -40,7 +40,7 @@ export function NavBar() {
         }`}
       >
         <div className="flex items-center">
-          <Link href="/">
+          <Link href="/home">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/logo.png"
@@ -51,7 +51,7 @@ export function NavBar() {
         </div>
 
         <nav className="flex items-center justify-center gap-10">
-          <Link href="/" className={`text-[15px] font-medium transition-colors duration-500 ${scrolled ? "text-black hover:text-neutral-600" : "text-white hover:text-gray-300"}`}>
+          <Link href="/home" className={`text-[15px] font-medium transition-colors duration-500 ${scrolled ? "text-black hover:text-neutral-600" : "text-white hover:text-gray-300"}`}>
             Home
           </Link>
           <Link href="/technology" className={`text-[15px] font-medium transition-colors duration-500 ${scrolled ? "text-black hover:text-neutral-600" : "text-white hover:text-gray-300"}`}>

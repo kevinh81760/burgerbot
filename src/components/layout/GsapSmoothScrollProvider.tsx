@@ -10,19 +10,15 @@ type Props = {
 export function GsapSmoothScrollProvider({ children }: Props) {
   useEffect(() => {
     const lenis = new Lenis({
-      lerp: 1,         // No interpolation — native-feeling scroll
-      smoothWheel: true, // Lenis still manages wheel events and boundaries
+      lerp: 1,
+      smoothWheel: true,
+      // Use Lenis-managed rAF so destroy() cancels the loop. A manual chain that
+      // only cancelAnimationFrame(firstId) leaves rAFs running after unmount
+      // (e.g. React Strict Mode) and breaks scrolling site-wide.
+      autoRaf: true,
     });
 
-    function raf(time: number) {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
-    }
-
-    const id = requestAnimationFrame(raf);
-
     return () => {
-      cancelAnimationFrame(id);
       lenis.destroy();
     };
   }, []);
